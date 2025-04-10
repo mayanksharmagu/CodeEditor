@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Code Editor</title>
+  <link rel="stylesheet" href="code.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Settings</h2>
+    <label for="theme-selector">Theme:</label>
+    <select id="theme-selector">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+    <button id="save-btn">Save</button>
+    <button id="load-btn">Load</button>
+    <button id="prev-btn">Previous</button>
+    <button id="next-btn">Next</button>
+  </div>
+  <div class="main-content">
+    <div class="header">
+      <h1>Web Code Editor</h1>
+    </div>
+    <div class="editor-container">
+      <div class="editor">
+        <h3>HTML</h3>
+        <textarea id="html-code" placeholder="Write HTML here..."></textarea>
+      </div>
+      <div class="editor">
+        <h3>CSS</h3>
+        <textarea id="css-code" placeholder="Write CSS here..."></textarea>
+      </div>
+      <div class="editor">
+        <h3>JavaScript</h3>
+        <textarea id="js-code" placeholder="Write JavaScript here..."></textarea>
+      </div>
+    </div>
+    <iframe id="output"></iframe>
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>
